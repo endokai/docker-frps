@@ -10,4 +10,4 @@ RUN apk update &&  \
    tar -zxvf /tmp/frp.tar.gz && mv frp_0.26.0_linux_amd64/frps /bin/frps && \
    mv /tmp/frps.ini /bin/frps.ini && \
    mv /tmp/run.sh /bin/run.sh && chmod a+x /bin/frps /bin/run.sh
-ENTRYPOINT ["run.sh"]
+CMD ["run.sh"]
